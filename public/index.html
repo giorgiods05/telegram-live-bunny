@@ -46,7 +46,7 @@
         document.getElementById('message').style.display = 'none';
         document.getElementById('wrapper').style.display = 'block';
       } catch (e) {
-        document.getElementById('message').innerHTML = '❌ Errore di connessione.';
+        document.getElementById('message').innerHTML = '❌ Errore: ' + e.message;
       }
     }
     init();
